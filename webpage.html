@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- chart.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="webpage.css" />
+    <title>Co-live</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Covid-19 Global Pie Chart</h1>
+    </div>
+
+    <div class="pie">
+      <h6>Number of Confirmed Cases Around the Globe</h6>
+      <canvas id="myChart" width="100px" height="50px"></canvas>
+      <canvas id="sChart"></canvas>
+    </div>
+
+    <input
+      id="search-input"
+      class="form-control"
+      type="text"
+      placeholder="(Country name) then press Enter"
+    />
+
+    <table>
+      <thead>
+        <tr>
+          <th class="countrycode">Country code</th>
+          <th>Country</th>
+          <th>Total Confirmed</th>
+          <th>Total Recovered</th>
+          <th>Total Deaths</th>
+        </tr>
+      </thead>
+      <tbody id="mytable"></tbody>
+    </table>
+
+    <!-- required links -->
+
+    <script src="webpage.js"></script>
+  </body>
+</html>

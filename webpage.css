@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  background-color: rgb(44, 44, 44);
+}
+.jumbotron {
+  background-color: cornflowerblue;
+  text-align: center;
+  margin-top: 0;
+  height: 100px;
+  width: 100%;
+}
+/* pie chart styling */
+.pie {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  padding-bottom: 20px;
+  color: white;
+}
+h6 {
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  border: wheat solid 1px;
+}
+
+/* table styling */
+table {
+  width: 100%;
+  height: min-content;
+  color: white;
+}
+th {
+  font-size: large;
+  padding: 1rem;
+  border: wheat solid 0.5px;
+  background-color: rgb(64, 100, 167);
+  text-align: left;
+}
+td {
+  border: wheat solid 1px;
+  padding: 0.5rem;
+  font-size: medium;
+}
+tbody {
+  overflow: scroll;
+}
+
+/* input styling*/
+#search-input {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  /* border: cornflowerblue solid px; */
+}
+#search-input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+#myChart {
+  display: block;
+  margin-top: 100px;
+}
+
+/* for resposive web design */
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+  }
+  .pie {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  /* hides countrycode */
+  .code {
+    display: none;
+  }
+  .countrycode {
+    display: none;
+  }
+  #search-input {
+    text-align: center;
+  }
+  #myChart {
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+  }
+}
