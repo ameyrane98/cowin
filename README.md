@@ -8,7 +8,7 @@ Features:
 ->Tabular format of data fetched from api.
 ->dynamic pie chart.
 ->filtered search by name countr name.
-->inidividual ppie charts for repective country searched.
+->inidividual pie charts for repective country searched.
 
 
 issues:
