@@ -1,4 +1,4 @@
-# Cowin.github.io
+# Cowin
 A simple Covid tracker with Html,Css,Js and Charts.js.
 
 
